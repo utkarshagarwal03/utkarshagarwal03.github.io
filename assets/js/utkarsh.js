@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 // ELEMENT TOGGLE
 const elementToggleFunc = function (elem) { elem.classList.toggle("active"); }
@@ -27,7 +27,6 @@ navLinks.forEach(link => {
 const select = document.querySelector("[data-select]");
 const selectItems = document.querySelectorAll("[data-select-item]");
 const selectValue = document.querySelector("[data-select-value]");
-const filterBtn = document.querySelectorAll("[data-filter-btn]");
 const filterItems = document.querySelectorAll("[data-filter-item]");
 
 // Toggle custom select
