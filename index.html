@@ -3,7 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Utkarsh's Portfolio</title>
+  <meta name="description" content="Utkarsh Agarwal - Aspiring Software Engineer specializing in Java Development, Data Structures & Algorithms. Portfolio showcasing projects and skills.">
+  <meta name="keywords" content="Utkarsh Agarwal, Software Engineer, Java Developer, DSA, Portfolio, Full Stack Developer">
+  <meta name="author" content="Utkarsh Agarwal">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Utkarsh Agarwal - Portfolio | Aspiring Software Engineer">
+  <meta property="og:description" content="Aspiring Software Engineer specializing in Java Development, Data Structures & Algorithms.">
+  <meta property="og:url" content="https://utkarshagarwal03.github.io">
+  
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:title" content="Utkarsh Agarwal - Portfolio">
+  <meta property="twitter:description" content="Aspiring Software Engineer specializing in Java Development, Data Structures & Algorithms.">
+  
+  <title>Utkarsh Agarwal - Portfolio | Aspiring Software Engineer</title>
 
   <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
   <link rel="stylesheet" href="./assets/css/utkarsh.css">
@@ -29,75 +44,73 @@
         <p class="title">Aspiring Software Engineer</p>
       </div>
 
-      <button class="info_more-btn" data-sidebar-btn>
+      <button class="info_more-btn" data-sidebar-btn aria-label="Toggle contact information">
         <span>Show Contacts</span>
         <ion-icon name="chevron-down"></ion-icon>
       </button>
     </div>
 
     <div class="sidebar-info_more">
-      <div class="separator"></div>
-
-      <ul class="contacts-list">
-        <li class="contact-item">
-          <div class="icon-box"><ion-icon name="mail-outline"></ion-icon></div>
-          <div class="contact-info">
-            <p class="contact-title">Email</p>
-            <a href="mailto:utkarshagr2005@gmail.com" class="contact-link">
-              utkarshagr2005@gmail.com
-            </a>
-          </div>
-        </li>
-
-        <li class="contact-item">
-          <div class="icon-box"><ion-icon name="location-outline"></ion-icon></div>
-          <div class="contact-info">
-            <p class="contact-title">Location</p>
-            <address>Bangalore, India</address>
-          </div>
-        </li>
-      </ul>
-
-      <div class="separator"></div>
-
-      <ul class="social-list">
-        <li class="social-item">
-          <a href="https://github.com/utkarshagarwal03" target="_blank" class="social-link">
-            <ion-icon name="logo-github"></ion-icon>
-          </a>
-        </li>
-        <li class="social-item">
-          <a href="https://www.linkedin.com/in/utkarsh-agarwal05/" target="_blank" class="social-link">
-            <ion-icon name="logo-linkedin"></ion-icon>
-          </a>
-        </li>
-      </ul>
+      <div class="sidebar-contact-section">
+        <a href="mailto:utkarshagr2005@gmail.com" class="sidebar-contact-btn">
+          <ion-icon name="mail-outline"></ion-icon>
+          <span>Email Me</span>
+        </a>
+        <a href="https://github.com/utkarshagarwal03" target="_blank" class="sidebar-contact-btn" aria-label="GitHub Profile" rel="noopener noreferrer">
+          <ion-icon name="logo-github"></ion-icon>
+          <span>GitHub</span>
+        </a>
+        <a href="https://www.linkedin.com/in/utkarsh-agarwal05/" target="_blank" class="sidebar-contact-btn" aria-label="LinkedIn Profile" rel="noopener noreferrer">
+          <ion-icon name="logo-linkedin"></ion-icon>
+          <span>LinkedIn</span>
+        </a>
+      </div>
+      <div class="sidebar-location">
+        <ion-icon name="location-outline"></ion-icon>
+        <span>Bangalore, India</span>
+      </div>
     </div>
   </aside>
 
   <!-- MAIN CONTENT -->
   <div class="main-content">
 
-    <!-- NAVBAR -->
-    <nav class="navbar">
-      <ul class="navbar-list">
-        <li class="navbar-item"><button class="navbar-link active" data-nav-link="about">About</button></li>
-        <li class="navbar-item"><button class="navbar-link" data-nav-link="resume">Resume</button></li>
-        <li class="navbar-item"><button class="navbar-link" data-nav-link="portfolio">Portfolio</button></li>
-        <li class="navbar-item"><button class="navbar-link" data-nav-link="contact">Contact</button></li>
-      </ul>
-    </nav>
+    <!-- HEADER WITH NAVBAR AND RESUME BUTTON -->
+    <header class="main-header">
+      <nav class="navbar">
+        <ul class="navbar-list">
+          <li class="navbar-item"><button class="navbar-link active" data-nav-link="about">About</button></li>
+          <li class="navbar-item"><button class="navbar-link" data-nav-link="resume">Resume</button></li>
+          <li class="navbar-item"><button class="navbar-link" data-nav-link="skills">Skills</button></li>
+          <li class="navbar-item"><button class="navbar-link" data-nav-link="portfolio">Portfolio</button></li>
+          <li class="navbar-item"><button class="navbar-link" data-nav-link="contact">Contact</button></li>
+        </ul>
+      </nav>
+      <a href="assets/Utkarsh_Agarwal_Resume.pdf" target="_blank" class="resume-download-btn">
+        <ion-icon name="download-outline"></ion-icon>
+        <span>Download Resume</span>
+      </a>
+    </header>
 
     <!-- ABOUT -->
     <article class="about active" data-page="about">
       <header><h2 class="h2 article-title">About Me</h2></header>
 
       <section class="about-text">
-        <p>I’m a Computer Science Engineering student and aspiring software engineer based in Bangalore.</p>
         <p>
-          I focus on Java development with a strong foundation in Data Structures and Algorithms.
-          I enjoy solving complex problems, writing clean code, and building logical solutions
-          that strengthen my software engineering fundamentals.
+          I'm a Computer Science Engineering student and aspiring software engineer based in Bangalore, 
+          passionate about building scalable solutions and solving complex problems through code.
+        </p>
+        <p>
+          With a strong foundation in Java development and Data Structures & Algorithms, I specialize 
+          in writing clean, efficient code that follows best practices and design patterns. My expertise 
+          includes object-oriented programming, database management, and building end-to-end applications 
+          that solve real-world challenges.
+        </p>
+        <p>
+          I'm actively seeking opportunities to contribute to innovative projects and grow as a software 
+          engineer. I enjoy collaborating with teams, learning new technologies, and continuously 
+          improving my problem-solving skills through competitive programming and hands-on projects.
         </p>
       </section>
 
@@ -125,28 +138,143 @@
     <article class="resume" data-page="resume">
       <header><h2 class="h2 article-title">Resume</h2></header>
 
-      <h3 class="h3">Education</h3>
-      <p>
-        <strong>B.E. Computer Science (Data Science)</strong><br>
-        SJB Institute of Technology, Bengaluru<br>
-        CGPA: 9.26
-      </p>
+      <section class="resume-section">
+        <h3 class="h3">Education</h3>
+        <div class="resume-item">
+          <div class="resume-item-header">
+            <h4 class="resume-item-title">B.E. Computer Science (Data Science)</h4>
+            <span class="resume-item-date">2022 - Present</span>
+          </div>
+          <p class="resume-item-subtitle">SJB Institute of Technology, Bengaluru</p>
+          <p class="resume-item-description">
+            <strong>CGPA:</strong> 9.26/10.0<br>
+            Relevant Coursework: Data Structures, Algorithms, Object-Oriented Programming, 
+            Database Management Systems, Software Engineering, Operating Systems
+          </p>
+        </div>
+      </section>
 
-      <h3 class="h3">Experience</h3>
-      <ul>
-        <li>AI & Cloud Intern – Edunet Foundation (IBM & AICTE)</li>
-        <li>Member – Google Developer Group On Campus</li>
-      </ul>
+      <section class="resume-section">
+        <h3 class="h3">Experience</h3>
+        <div class="resume-item">
+          <div class="resume-item-header">
+            <h4 class="resume-item-title">AI & Cloud Intern</h4>
+            <span class="resume-item-date">2024</span>
+          </div>
+          <p class="resume-item-subtitle">Edunet Foundation (IBM & AICTE)</p>
+          <ul class="resume-item-list">
+            <li>Worked on AI and cloud computing projects under IBM & AICTE collaboration</li>
+            <li>Gained hands-on experience with cloud platforms and AI technologies</li>
+            <li>Collaborated with team members on real-world industry projects</li>
+          </ul>
+        </div>
+        <div class="resume-item">
+          <div class="resume-item-header">
+            <h4 class="resume-item-title">Member</h4>
+            <span class="resume-item-date">2023 - Present</span>
+          </div>
+          <p class="resume-item-subtitle">Google Developer Group On Campus</p>
+          <ul class="resume-item-list">
+            <li>Active member of GDG community, participating in tech events and workshops</li>
+            <li>Collaborating with peers on open-source projects and community initiatives</li>
+            <li>Staying updated with latest Google technologies and best practices</li>
+          </ul>
+        </div>
+      </section>
 
-      <h3 class="h3">Skills</h3>
-      <ul>
-        <li>Java, C, Python, SQL</li>
-        <li>Data Structures & Algorithms</li>
-        <li>OOP, DBMS</li>
-        <li>Git, GitHub, IntelliJ</li>
-      </ul>
+      <section class="resume-section">
+        <h3 class="h3">Key Projects</h3>
+        <div class="resume-item">
+          <div class="resume-item-header">
+            <h4 class="resume-item-title">ATM Machine System</h4>
+            <span class="resume-item-date">2024</span>
+          </div>
+          <p class="resume-item-description">
+            Developed a full-stack ATM simulation system using Java, SQL, and JDBC. 
+            Implemented secure transaction processing, user authentication, and database management.
+          </p>
+        </div>
+        <div class="resume-item">
+          <div class="resume-item-header">
+            <h4 class="resume-item-title">Hotel Management System</h4>
+            <span class="resume-item-date">2024</span>
+          </div>
+          <p class="resume-item-description">
+            Built a comprehensive hotel management application in Java with features for 
+            room booking, guest management, and billing operations.
+          </p>
+        </div>
+      </section>
 
-      <a href="assets/Utkarsh_Agarwal_Resume.pdf" target="_blank">Download Resume</a>
+      <section class="resume-section">
+        <h3 class="h3">Achievements</h3>
+        <ul class="resume-item-list">
+          <li>Maintained CGPA of 9.26/10.0 throughout academic career</li>
+          <li>Active problem solver on LeetCode and other competitive programming platforms</li>
+          <li>Member of Google Developer Group On Campus</li>
+        </ul>
+      </section>
+
+      <a href="assets/Utkarsh_Agarwal_Resume.pdf" target="_blank" class="resume-download-link">
+        <ion-icon name="download-outline"></ion-icon>
+        <span>Download Full Resume (PDF)</span>
+      </a>
+    </article>
+
+    <!-- SKILLS -->
+    <article class="skills" data-page="skills">
+      <header><h2 class="h2 article-title">Skills</h2></header>
+
+      <section class="skills-section">
+        <h3 class="h3">Programming Languages</h3>
+        <ul class="skills-list-category">
+          <li class="skill-tag">Java</li>
+          <li class="skill-tag">Python</li>
+          <li class="skill-tag">C</li>
+          <li class="skill-tag">SQL</li>
+        </ul>
+      </section>
+
+      <section class="skills-section">
+        <h3 class="h3">Technologies & Frameworks</h3>
+        <ul class="skills-list-category">
+          <li class="skill-tag">JDBC</li>
+          <li class="skill-tag">MySQL</li>
+          <li class="skill-tag">Git</li>
+          <li class="skill-tag">GitHub</li>
+        </ul>
+      </section>
+
+      <section class="skills-section">
+        <h3 class="h3">Core Competencies</h3>
+        <ul class="skills-list-category">
+          <li class="skill-tag">Data Structures & Algorithms</li>
+          <li class="skill-tag">Object-Oriented Programming</li>
+          <li class="skill-tag">Database Management Systems</li>
+          <li class="skill-tag">Problem Solving</li>
+          <li class="skill-tag">Software Design Patterns</li>
+          <li class="skill-tag">System Design</li>
+        </ul>
+      </section>
+
+      <section class="skills-section">
+        <h3 class="h3">Tools & IDEs</h3>
+        <ul class="skills-list-category">
+          <li class="skill-tag">IntelliJ IDEA</li>
+          <li class="skill-tag">Eclipse</li>
+          <li class="skill-tag">VS Code</li>
+          <li class="skill-tag">MySQL Workbench</li>
+        </ul>
+      </section>
+
+      <section class="skills-section">
+        <h3 class="h3">Platforms</h3>
+        <ul class="skills-list-category">
+          <li class="skill-tag">LeetCode</li>
+          <li class="skill-tag">GitHub</li>
+          <li class="skill-tag">Competitive Programming</li>
+        </ul>
+      </section>
     </article>
 
     <!-- PORTFOLIO -->
@@ -164,24 +292,71 @@
 
       <ul class="project-list">
         <li class="project-item active" data-filter-item data-category="Java">
-          <a href="https://github.com/utkarshagarwal03" target="_blank">
+          <div class="project-content">
             <h3 class="project-title">ATM Machine System</h3>
-            <p class="project-category">Java, SQL, JDBC</p>
-          </a>
+            <p class="project-description">
+              A comprehensive ATM simulation system with secure transaction processing, 
+              user authentication, and real-time balance management. Features include 
+              cash withdrawal, deposit, fund transfer, and transaction history.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">Java</span>
+              <span class="tech-tag">SQL</span>
+              <span class="tech-tag">JDBC</span>
+              <span class="tech-tag">MySQL</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/utkarshagarwal03" target="_blank" class="project-link" rel="noopener noreferrer">
+                <ion-icon name="logo-github"></ion-icon>
+                <span>View Code</span>
+              </a>
+            </div>
+          </div>
         </li>
 
         <li class="project-item active" data-filter-item data-category="Java">
-          <a href="https://github.com/utkarshagarwal03" target="_blank">
+          <div class="project-content">
             <h3 class="project-title">Hotel Management System</h3>
-            <p class="project-category">Java</p>
-          </a>
+            <p class="project-description">
+              A full-featured hotel management application for handling room bookings, 
+              guest check-in/check-out, billing, and inventory management. Built with 
+              clean architecture and modular design principles.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">Java</span>
+              <span class="tech-tag">OOP</span>
+              <span class="tech-tag">File I/O</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/utkarshagarwal03" target="_blank" class="project-link" rel="noopener noreferrer">
+                <ion-icon name="logo-github"></ion-icon>
+                <span>View Code</span>
+              </a>
+            </div>
+          </div>
         </li>
 
         <li class="project-item active" data-filter-item data-category="DSA">
-          <a href="https://leetcode.com/u/utkarshag03/" target="_blank">
-            <h3 class="project-title">DSA Practice</h3>
-            <p class="project-category">Java, DSA</p>
-          </a>
+          <div class="project-content">
+            <h3 class="project-title">Data Structures & Algorithms Practice</h3>
+            <p class="project-description">
+              Regular practice on LeetCode and other competitive programming platforms. 
+              Solved 200+ problems covering arrays, linked lists, trees, graphs, dynamic 
+              programming, and advanced algorithms.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">Java</span>
+              <span class="tech-tag">DSA</span>
+              <span class="tech-tag">Algorithms</span>
+              <span class="tech-tag">Problem Solving</span>
+            </div>
+            <div class="project-links">
+              <a href="https://leetcode.com/u/utkarshag03/" target="_blank" class="project-link" rel="noopener noreferrer">
+                <ion-icon name="code-outline"></ion-icon>
+                <span>View Profile</span>
+              </a>
+            </div>
+          </div>
         </li>
       </ul>
     </article>
@@ -191,9 +366,9 @@
       <header><h2 class="h2 article-title">Contact</h2></header>
 
       <form action="https://formspree.io/f/mqebjwdn" method="POST" class="form" data-form>
-        <input type="text" name="name" placeholder="Full Name" required data-form-input>
-        <input type="email" name="email" placeholder="Email" required data-form-input>
-        <textarea name="message" placeholder="Message" required data-form-input></textarea>
+        <input type="text" name="name" placeholder="Full Name" required data-form-input aria-label="Full Name">
+        <input type="email" name="email" placeholder="Email" required data-form-input aria-label="Email">
+        <textarea name="message" placeholder="Message" required data-form-input aria-label="Message"></textarea>
         <button type="submit" data-form-btn disabled>Send Message</button>
       </form>
     </article>
@@ -204,6 +379,37 @@
 <script src="./assets/js/utkarsh.js" defer></script>
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+<!-- Structured Data for SEO -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Utkarsh Agarwal",
+  "jobTitle": "Aspiring Software Engineer",
+  "url": "https://utkarshagarwal03.github.io",
+  "sameAs": [
+    "https://github.com/utkarshagarwal03",
+    "https://www.linkedin.com/in/utkarsh-agarwal05/"
+  ],
+  "email": "utkarshagr2005@gmail.com",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Bangalore",
+    "addressCountry": "India"
+  },
+  "alumniOf": {
+    "@type": "EducationalOrganization",
+    "name": "SJB Institute of Technology"
+  },
+  "knowsAbout": [
+    "Java Development",
+    "Data Structures and Algorithms",
+    "Object-Oriented Programming",
+    "Database Management Systems"
+  ]
+}
+</script>
 
 </body>
 </html>
